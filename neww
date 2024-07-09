@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương pháp đánh giá</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Phương pháp đánh giá</h2>
+    <table>
+        <tr>
+            <th>Thành phần đánh giá</th>
+            <th>Nội dung</th>
+            <th>Tỷ lệ %</th>
+        </tr>
+        <tr>
+            <td>Đánh giá quá trình</td>
+            <td>Bài tập cá nhân, bài tập nhóm</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>Kiểm tra giữa kỳ</td>
+            <td>Làm bài trên máy tính</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>Kiểm tra cuối kỳ</td>
+            <td class="highlight">Tự luận</td>
+            <td class="highlight">50%</td>
+        </tr>
+    </table>
+</body>
+</html>
