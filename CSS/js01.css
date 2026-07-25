@@ -1,0 +1,29 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    background: #f5f5f5;
+}
+
+#cuuchuong {
+    border: 2px solid #2b6fb3;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+#cuuchuong caption {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding: 12px 0;
+}
+
+#cuuchuong td {
+    border: 1px solid #2b6fb3;
+    vertical-align: top;
+    padding: 10px 18px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #1a3e8c;
+}

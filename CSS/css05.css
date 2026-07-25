@@ -1,0 +1,102 @@
+/* css05.css - Bài 5: Trang xem phim kiểu streaming */
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  margin: 0;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.9), rgba(0,0,0,0));
+}
+
+.logo {
+  color: #e50914;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.topbar nav a {
+  color: #e5e5e5;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 14px;
+}
+
+.topbar nav a:hover {
+  color: #fff;
+}
+
+main {
+  padding: 10px 40px 50px 40px;
+}
+
+.page-title {
+  font-size: 28px;
+  margin: 20px 0 30px 0;
+}
+
+.row h2 {
+  font-size: 18px;
+  color: #e5e5e5;
+  margin: 30px 0 14px 0;
+}
+
+.poster-track {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.poster {
+  position: relative;
+  min-width: 150px;
+  height: 210px;
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.poster:hover {
+  transform: scale(1.12);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.6);
+  z-index: 2;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #e50914;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Bảng màu placeholder cho từng poster */
+.hue1  { background: linear-gradient(135deg, #4b1d3f, #1a0f1e); }
+.hue2  { background: linear-gradient(135deg, #2f6b4f, #123626); }
+.hue3  { background: linear-gradient(135deg, #6b4c1f, #2e2109); }
+.hue4  { background: linear-gradient(135deg, #234b6b, #0d1f2e); }
+.hue5  { background: linear-gradient(135deg, #3a1f6b, #170b2e); }
+.hue6  { background: linear-gradient(135deg, #6b1f2a, #2e0d12); }
+.hue7  { background: linear-gradient(135deg, #1f4a6b, #0b1e2e); }
+.hue8  { background: linear-gradient(135deg, #4a4a4a, #1c1c1c); }
+.hue9  { background: linear-gradient(135deg, #1f6b5a, #0b2e26); }
+.hue10 { background: linear-gradient(135deg, #6b3a1f, #2e190b); }

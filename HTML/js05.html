@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình xử lý chuỗi</title>
+    <link rel="stylesheet" href="CSS/js05.css">
+</head>
+<body>
+    <div class="box">
+        <div class="marquee-container">
+            <span class="marquee-text">CHƯƠNG TRÌNH XỬ LÝ CHUỖI</span>
+        </div>
+
+        <table>
+            <tr>
+                <td>Chuỗi S1:</td>
+                <td><input type="text" id="s1" value="Learning JAVASCRIPT is veRy easy"></td>
+            </tr>
+            <tr>
+                <td>Chuỗi S2:</td>
+                <td><input type="text" id="s2" value="javascript"></td>
+            </tr>
+            <tr>
+                <td>Chuỗi S3:</td>
+                <td><input type="text" id="s3" value="jQuery"></td>
+            </tr>
+            <tr>
+                <td>Vị trí chèn:</td>
+                <td><input type="number" id="vitri" value="0"></td>
+            </tr>
+        </table>
+
+        <div>
+            <button onclick="chuanHoaChuoi()">Chuẩn hóa chuỗi</button>
+            <button onclick="daoChuoi()">Đảo chuỗi</button>
+            <button onclick="khoiPhuc()">Khôi phục</button>
+        </div>
+        <div>
+            <button onclick="thayTheS2BangS3()">Thay thế S2 bằng S3</button>
+            <button onclick="chenS2VaoS1()">Chèn S2 vào S1</button>
+            <button onclick="xoaS2TrongS1()">Xóa S2 trong S1</button>
+        </div>
+    </div>
+
+    <script src="JS/js05.js"></script>
+</body>
+</html>

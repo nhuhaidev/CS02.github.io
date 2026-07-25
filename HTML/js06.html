@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Các phép tính số học</title>
+    <link rel="stylesheet" href="CSS/js06.css">
+</head>
+<body>
+    <form onsubmit="return thucHienTinh()">
+        <table class="form-box">
+            <caption>CÁC PHÉP TÍNH SỐ HỌC</caption>
+            <tr>
+                <td>Số thứ 1</td>
+                <td><input type="text" id="so1" value="5"></td>
+            </tr>
+            <tr>
+                <td>Số thứ 2</td>
+                <td><input type="text" id="so2" value="4"></td>
+            </tr>
+            <tr>
+                <td>Chọn phép toán</td>
+                <td class="radios">
+                    <label><input type="radio" name="phepToan" value="cong"> Cộng</label><br>
+                    <label><input type="radio" name="phepToan" value="tru"> Trừ</label><br>
+                    <label><input type="radio" name="phepToan" value="nhan"> Nhân</label><br>
+                    <label><input type="radio" name="phepToan" value="chia" checked> Chia</label>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">Thực hiện</button></td>
+                <td><input type="text" id="ketQua" readonly></td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="JS/js06.js"></script>
+</body>
+</html>

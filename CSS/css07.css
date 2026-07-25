@@ -1,0 +1,153 @@
+/* css07.css - Bài 7: Shop Online */
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f5f6f8;
+  color: #222;
+}
+
+.shop-header {
+  background: #23272f;
+  color: #fff;
+  text-align: center;
+  padding: 24px 20px 0 20px;
+}
+
+.shop-header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.shop-header p {
+  margin: 6px 0 18px 0;
+  font-size: 13px;
+  color: #c7ccd6;
+}
+
+.shop-nav {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  border-top: 1px solid #383e4a;
+  padding: 12px 0;
+}
+
+.shop-nav > a,
+.shop-nav .dropdown > a {
+  color: #f5a623;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.shop-nav > a:hover,
+.shop-nav .dropdown > a:hover {
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c313c;
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 6px 0;
+  min-width: 150px;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 8px 16px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.dropdown-menu li a:hover {
+  background: #3a4150;
+  color: #f5a623;
+}
+
+.product-grid {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.product-image {
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  background: #f0f2f6;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.product-image img {
+  width: auto;      
+  height: 150px;
+  object-fit: contain;
+}
+
+.product-card h3 {
+  font-size: 13px;
+  margin: 0 0 6px 0;
+  min-height: 34px;
+}
+
+.price {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0 0 10px 0;
+}
+
+.product-card button {
+  width: 100%;
+  padding: 8px;
+  background: #2e9e4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #257f40;
+}
+
+@media (max-width: 800px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+}

@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+    background: #eef1f5;
+}
+
+.profile-card {
+    background: #fff;
+    width: 480px;
+    padding: 25px 35px 35px 35px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #2b6fb3;
+    color: #fff;
+    font-size: 40px;
+    line-height: 100px;
+    margin: 0 auto 10px auto;
+}
+
+.profile-card h1 {
+    font-size: 24px;
+    color: #1a3e8c;
+    margin: 5px 0;
+}
+
+.contact {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+section {
+    text-align: left;
+    margin-top: 22px;
+}
+
+section h2 {
+    font-size: 17px;
+    color: #1a3e8c;
+    border-bottom: 2px solid #2b6fb3;
+    padding-bottom: 6px;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.badge {
+    background: #2b6fb3;
+    color: #fff;
+    padding: 5px 14px;
+    border-radius: 16px;
+    font-size: 13px;
+}
+
+.exp-item {
+    margin-bottom: 8px;
+}
+
+.exp-desc {
+    margin-left: 18px;
+    color: #444;
+    font-size: 14px;
+}
+
+fieldset.add-exp {
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+}
+
+fieldset.add-exp label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+fieldset.add-exp input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 3px;
+}
+
+section button {
+    display: block;
+    margin: 12px auto 0 auto;
+    background: #2b6fb3;
+    color: #fff;
+    border: none;
+    padding: 7px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}

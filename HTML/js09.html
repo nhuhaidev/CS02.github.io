@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hồ sơ cá nhân</title>
+    <link rel="stylesheet" href="CSS/js09.css">
+</head>
+<body>
+    <div class="profile-card">
+        <div class="avatar">NA</div>
+        <h1>Nguyễn Văn A</h1>
+        <p class="contact">Email: nguyen.vana@example.com | Điện thoại: 0123 456 789</p>
+
+        <section>
+            <h2>Kỹ năng</h2>
+            <div id="skillsList" class="badges">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JavaScript</span>
+            </div>
+            <button onclick="themKyNang()">Thêm kỹ năng</button>
+        </section>
+
+        <section>
+            <h2>Kinh nghiệm làm việc</h2>
+            <div id="expList">
+                <div class="exp-item">
+                    <b>Frontend Developer tại Công ty ABC</b>
+                    <div class="exp-desc">2018 - 2022 - Phát triển giao diện web và ứng dụng mobile</div>
+                </div>
+                <div class="exp-item">
+                    <b>Project manager tại Công ty XYZ</b>
+                    <div class="exp-desc">2022 - 2024 - Quản lý các dự án phần mềm</div>
+                </div>
+            </div>
+            <fieldset class="add-exp">
+                <legend>Thêm kinh nghiệm</legend>
+                <label>Kinh nghiệm:
+                    <input type="text" id="expTitle">
+                </label>
+                <label>Mô tả:
+                    <input type="text" id="expDesc">
+                </label>
+            </fieldset>
+            <button onclick="themKinhNghiem()">Thêm kinh nghiệm</button>
+        </section>
+
+        <section>
+            <h2>Học vấn</h2>
+            <b>Đại học Công nghệ XYZ</b>
+            <div>2017 - 2021</div>
+            <div>Ngành Công nghệ Thông tin</div>
+        </section>
+    </div>
+
+    <script src="JS/js09.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Bài 3 - Trang quản trị Admin</title>
+<link rel="stylesheet" href="../CSS/css03.css">
+</head>
+<body>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Admin</h2>
+      <ul class="menu">
+        <li class="active">Dashboard</li>
+        <li>Người dùng</li>
+        <li>Báo cáo</li>
+        <li>Cài đặt</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1>Tổng quan hệ thống</h1>
+
+      <div class="stat-cards">
+        <div class="card">
+          <span class="card-label">Người dùng</span>
+          <span class="card-value">1.230</span>
+        </div>
+        <div class="card">
+          <span class="card-label">Đơn hàng</span>
+          <span class="card-value">860</span>
+        </div>
+        <div class="card">
+          <span class="card-label">Lượt truy cập</span>
+          <span class="card-value">15.400</span>
+        </div>
+      </div>
+
+      <h2>Danh sách người dùng</h2>
+      <table class="user-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tên</th>
+            <th>Email</th>
+            <th>Trạng thái</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Nguyễn Văn A</td>
+            <td>a@example.com</td>
+            <td><span class="status active">Hoạt động</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Trần Thị B</td>
+            <td>b@example.com</td>
+            <td><span class="status locked">Tạm khóa</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Lê Văn C</td>
+            <td>c@example.com</td>
+            <td><span class="status active">Hoạt động</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+</body>
+</html>

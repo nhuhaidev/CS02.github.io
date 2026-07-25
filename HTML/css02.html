@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Bài 2 - Các sự kiện trong tháng</title>
+<link rel="stylesheet" href="../CSS/css02.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <h1>CÁC SỰ KIỆN TRONG THÁNG 12/2025</h1>
+  </header>
+
+  <table class="event-table">
+    <thead>
+      <tr>
+        <th>SỰ KIỆN</th>
+        <th>ĐỊA ĐIỂM</th>
+        <th>THỜI GIAN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Hội thi tay nghề điêu khắc</td>
+        <td>Tây Ninh</td>
+        <td>Từ ngày 01-04 tháng 12/2015</td>
+      </tr>
+      <tr>
+        <td>Triển lãm tranh sơn mài</td>
+        <td>Bình Dương</td>
+        <td>Từ ngày 10-15 tháng 12/2015</td>
+      </tr>
+      <tr>
+        <td>Hội thi bánh dân gian Nam Bộ</td>
+        <td>Vĩnh Long</td>
+        <td>Từ ngày 15-20 tháng 12/2015</td>
+      </tr>
+      <tr>
+        <td>Hội thi văn nghệ quần chúng</td>
+        <td>Thành Phố Hồ Chí Minh</td>
+        <td>Từ ngày 25-30 tháng 12/2015</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="form-wrapper">
+    <form class="event-form">
+      <h2>Đăng Ký Tham gia Sự kiện</h2>
+
+      <label for="fullname">Họ và Tên</label>
+      <input type="text" id="fullname" name="fullname">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+
+      <label for="phone">Số điện thoại</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="event">Chọn sự kiện</label>
+      <select id="event" name="event">
+        <option value="">-- Chọn sự kiện --</option>
+        <option value="dieu-khac">Hội thi tay nghề điêu khắc</option>
+        <option value="son-mai">Triển lãm tranh sơn mài</option>
+        <option value="banh-dan-gian">Hội thi bánh dân gian Nam Bộ</option>
+        <option value="van-nghe">Hội thi văn nghệ quần chúng</option>
+      </select>
+
+      <label for="note">Ghi chú thêm</label>
+      <textarea id="note" name="note" rows="4"></textarea>
+
+      <button type="submit">Đăng ký ngay</button>
+    </form>
+  </div>
+
+</body>
+</html>

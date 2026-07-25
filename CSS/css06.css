@@ -1,0 +1,102 @@
+/* css06.css - Bài 6: Trang giới thiệu sản phẩm */
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: #1a1a1a;
+  background: #fff;
+}
+
+.product-header {
+  background: #1c1c1e;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+}
+
+.product-header h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hero {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.15), transparent 60%),
+    linear-gradient(135deg, #3a3a3c, #0f0f10 70%);
+}
+
+.hero h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(90deg, #ffe27a, #fff6d6, #ffe27a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.features {
+  display: flex;
+  gap: 20px;
+  padding: 30px 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 18px 20px;
+}
+
+.feature-card h3 {
+  font-size: 15px;
+  margin: 0 0 8px 0;
+}
+
+.feature-card p {
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cta-banner {
+  background: #2e9e4f;
+  color: #fff;
+  text-align: center;
+  padding: 26px 20px;
+}
+
+.cta-banner p {
+  margin: 0 0 14px 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.cta-banner button {
+  padding: 10px 30px;
+  background: #fff;
+  color: #2e9e4f;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cta-banner button:hover {
+  background: #eafaf0;
+}

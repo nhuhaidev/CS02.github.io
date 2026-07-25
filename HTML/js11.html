@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Các dạng biểu đồ</title>
+    <link rel="stylesheet" href="../CSS/js11.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <div class="box">
+        <h2>Các dạng biểu đồ</h2>
+
+        <fieldset>
+            <legend>Chart types</legend>
+            <label><input type="radio" name="loaiBieuDo" value="pie" checked> Pie</label>
+            <label><input type="radio" name="loaiBieuDo" value="line"> Line</label>
+            <label><input type="radio" name="loaiBieuDo" value="column"> Column</label>
+        </fieldset>
+
+        <div class="field">
+            <label>Tiêu đề</label>
+            <input type="text" id="tieuDe" value="Xuất sắc, Giỏi, Khá, Trung bình, Yếu">
+        </div>
+        <div class="field">
+            <label>Giá trị:</label>
+            <input type="text" id="giaTri" value="10,50,70,80,30">
+            <button id="btnDraw" onclick="veBieuDo()" disabled>Draw Chart</button>
+        </div>
+
+        <div id="chartDiv"></div>
+    </div>
+
+    <script src="../JS/js11.js"></script>
+</body>
+</html>

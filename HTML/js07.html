@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký thành viên</title>
+    <link rel="stylesheet" href="CSS/js07.css">
+</head>
+<body>
+    <div class="box">
+        <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+        <form id="regForm" onsubmit="return dangKy(event)">
+            <table>
+                <tr>
+                    <td>Tên đăng nhập</td>
+                    <td><input type="text" id="username"></td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu</td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td><input type="date" id="dob"></td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <label><input type="radio" name="gioiTinh" value="Nam" checked> Nam</label>
+                        <label><input type="radio" name="gioiTinh" value="Nữ"> Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vấn đề bạn quan tâm</td>
+                    <td>
+                        <select id="vanDe">
+                            <option value="Kinh tế">Kinh tế</option>
+                            <option value="Thể thao">Thể thao</option>
+                            <option value="Văn học nghệ thuật">Văn học nghệ thuật</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Đăng ký</button>
+            <button type="button" onclick="huy()">Hủy</button>
+        </form>
+        <textarea id="output" readonly></textarea>
+    </div>
+
+    <script src="JS/js07.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* css04.css - Bài 4: Banner hoạt hình */
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 40px;
+}
+
+.outer-frame {
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #7fb3ff;
+  border-radius: 4px;
+  background: #fff;
+  padding: 20px;
+}
+
+/* Banner: đổi màu nền + chữ to nhỏ đồng bộ */
+.banner {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  margin-bottom: 24px;
+  animation: bannerColor 6s ease-in-out infinite;
+}
+
+.banner span {
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: bannerSize 6s ease-in-out infinite;
+}
+
+@keyframes bannerColor {
+  0%   { background-color: #ff2d78; }
+  25%  { background-color: #ff00e5; }
+  50%  { background-color: #7b2ff7; }
+  75%  { background-color: #ff00e5; }
+  100% { background-color: #ff2d78; }
+}
+
+@keyframes bannerSize {
+  0%   { font-size: 12px; }
+  50%  { font-size: 30px; }
+  100% { font-size: 12px; }
+}
+
+.box-row {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Box 1: ảnh nền tuần tự thay đổi */
+.box1 {
+  border: 3px solid #e53935;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  animation: imageCycle 6s infinite;
+}
+
+.box1 .num {
+  color: #fff700;
+  font-size: 26px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+@keyframes imageCycle {
+  0%, 32%   { background-image: url('../Images/1.jpg'); }
+  33%, 65%  { background-image: url('../Images/2.jpg'); }
+  33%, 65%  { background-image: url('../Images/3.jpg'); }
+  66%, 100% { background-image: url('../Images/4.jpg'); }
+  66%, 100% { background-image: url('../Images/5.jpg'); }
+  66%, 100% { background-image: url('../Images/6.jpg'); }
+
+}
+
+/* Box 2: viền gạch đứt (dashed) */
+.box2 {
+  background: #00e5ff;
+  border: 3px dashed #1a56ff;
+  border-radius: 12px;
+  color: #fff;
+}
+
+/* Box 3: viền chấm (dotted) */
+.box3 {
+  background: #00e5ff;
+  border: 3px dotted #ff4fd8;
+  border-radius: 12px;
+  color: #fff;
+}
+
+/* Box 4: chữ dọc + xoay theo chiều kim đồng hồ */
+.box4 {
+  background: #1b7a72;
+  border: 2px solid #b7c93b;
+  color: #d9f5a3;
+  writing-mode: vertical-rl;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}

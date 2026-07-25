@@ -1,0 +1,115 @@
+/* css02.css - Bài 2: Bảng sự kiện + Form đăng ký */
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 30px;
+  color: #222;
+}
+
+.page-header {
+  background: #1a56c4;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  border-radius: 6px 6px 0 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
+.event-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.event-table th {
+  background: #1a56c4;
+  color: #fff;
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.event-table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #e2e6ec;
+}
+
+.event-table tbody tr:nth-child(even) {
+  background: #eef1f7;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.event-form {
+  background: #fff;
+  max-width: 420px;
+  width: 100%;
+  padding: 28px 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.event-form h2 {
+  text-align: center;
+  font-size: 18px;
+  color: #1a56c4;
+  margin: 0 0 20px 0;
+}
+
+.event-form label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 14px 0 6px 0;
+  color: #333;
+}
+
+.event-form input,
+.event-form select,
+.event-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #c9cfd8;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.event-form textarea {
+  resize: vertical;
+}
+
+.event-form button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 10px;
+  background: #1a8fe3;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.event-form button:hover {
+  background: #1573bd;
+}
